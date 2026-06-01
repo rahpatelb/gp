@@ -1,0 +1,5 @@
+python-telegram-bot==20.7
+requests==2.31.0
+cryptography==41.0.7
+PyJWT==2.8.0
+Flask==3.0.0
