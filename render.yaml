@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: classplus-telegram-bot
+    runtime: python
+    repo: https://github.com/YOUR_USERNAME/classplus-bot
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python advanced_bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false
